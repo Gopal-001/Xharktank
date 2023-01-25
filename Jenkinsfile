@@ -10,7 +10,9 @@ pipeline{
 		}
 		stage("Testings"){
 			steps{
-				sh "pip install -r requirements txt"
+				sh "apt-get install python-pip"
+				sh "python -m ensurepip --upgrade"
+				sh "C:\Users\samee\AppData\Local\Microsoft\WindowsApps\pip install -r requirements txt"
 				sh "py main.py"
 			}
 		}
