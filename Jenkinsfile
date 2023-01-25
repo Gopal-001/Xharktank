@@ -10,7 +10,8 @@ pipeline{
 		}
 		stage("Testings"){
 			steps{
-				sh "yum install python-pip"
+				sh "C:\Users\samee\AppData\Local\Microsoft\WindowsApps\pip.exe install -r requirements txt"
+				sh "py main.py"
 			}
 		}
 		
