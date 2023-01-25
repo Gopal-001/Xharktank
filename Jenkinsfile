@@ -10,9 +10,9 @@ pipeline{
 		}
 		stage("Test"){
 			steps{
-				
-				sh "pip3 install -r requirements txt"
-				sh "python3 main.py"
+				bat "py get-pip.py"
+				sh "pip install -r requirements txt"
+				sh "py main.py"
 			}
 		}
 	}
