@@ -10,7 +10,6 @@ pipeline{
 		}
 		stage("Test"){
 			steps{
-				bat "py get-pip.py"
 				sh "pip install -r requirements txt"
 				sh "py main.py"
 			}
