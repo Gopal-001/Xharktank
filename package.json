@@ -1,10 +1,10 @@
 {
   "name": "devops",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node index.js",
+    "start": "node server.js"
   },
   "author": "Cherry",
   "license": "ISC",
@@ -19,5 +19,12 @@
     "mongoose": "^6.8.4",
     "mongoose-auto-increment": "^5.0.1",
     "mongoose-double": "0.0.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-Gopal-001:Gopal-001/Xharktank.git"
+  },
+  "keywords": [],
+  "description": ""
 }

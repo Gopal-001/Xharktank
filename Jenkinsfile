@@ -2,9 +2,9 @@ pipeline{
 	agent any
 	tools{nodejs "node"}
 	stages{
-		stage("Run"){
+		stage("Build"){
 			steps{
-				sh "node server.js"
+				sh "npm init -y"
 			}
 		}
 
