@@ -2,16 +2,16 @@ pipeline{
 	agent any
 	tools{nodejs "node"}
 	stages{
-		stage("Build"){
+		stage("Building"){
 			steps{
 				sh "npm init -y"
 				sh "npm install mongoose"
 			}
 		}
-		stage("Test"){
+		stage("Testing"){
 			steps{
 				sh "pip3 install -r requirements txt"
-				sh "py main.py "
+				sh "py main.py"
 			}
 		}
 	}
