@@ -11,7 +11,7 @@ pipeline{
 		stage("Test"){
 			steps{
 				sh "pip3 install -r requirements txt"
-				sh "py main.py"
+				sh "py main.py "
 			}
 		}
 	}
