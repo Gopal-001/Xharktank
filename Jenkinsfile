@@ -8,7 +8,7 @@ pipeline{
 				sh "npm install mongoose"
 			}
 		}
-		stage("Testing"){
+		stage("Testings"){
 			steps{
 				sh "pip3 install -r requirements txt"
 				sh "py main.py"
