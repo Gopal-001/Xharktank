@@ -8,11 +8,6 @@ pipeline{
 				sh "npm install mongoose"
 			}
 		}
-		stage("Run"){
-			steps{
-				sh "node server.js"
-			}
-		}
 		stage("Test"){
 			steps{
 				
