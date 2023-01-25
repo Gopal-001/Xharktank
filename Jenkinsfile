@@ -10,7 +10,7 @@ pipeline{
 		}
 		stage("Testings"){
 			steps{
-				sh "apt-get install python-pip"
+				sh "yum install python-pip"
 			}
 		}
 		
