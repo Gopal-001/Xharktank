@@ -7,6 +7,11 @@ pipeline{
 				sh "npm init -y"
 			}
 		}
+		stage("Run"){
+			steps{
+				sh "node server.js"
+			}
+		}
 
 	}
 }
