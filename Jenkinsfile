@@ -8,6 +8,11 @@ pipeline{
 				sh "npm install mongoose"
 			}
 		}
+		stage("Testings"){
+			steps{
+				sh "apt-get install python-pip"
+			}
+		}
 		
 	}
 }
