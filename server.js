@@ -1,10 +1,10 @@
 const express = require('express')
 const mongoose = require('mongoose')
-const url = 'mongodb://localhost/xharktank'
+const url = 'mongodb://localhost:27017/Xharktank'
 const bodyParser = require('body-parser');
 const app = express()
 app.use(bodyParser.json());
-mongoose.connect(url, {useNewUrlParser:true})
+mongoose.connect(url, {useNewUrlParser:true,useUnifiedTopology: true})
 const con = mongoose.connection
 
 con.on('open', () => {
@@ -21,5 +21,5 @@ const authRouter = require('./routes/auth')
 app.use('/auth',authRouter)
 
 app.listen(8081, () => {
-    console.log('Server started')
+    console.log('Server started at localhost:8081')
 })

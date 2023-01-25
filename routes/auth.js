@@ -44,7 +44,7 @@ router.get('/logout', function(req, res) {
 router.post('/register', function(req, res) {
 
   var hashedPassword = bcrypt.hashSync(req.body.password, 8);
-
+  console.log(res.body);
   User.create({
     name : req.body.name,
     email : req.body.email,
