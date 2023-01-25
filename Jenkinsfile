@@ -13,7 +13,13 @@ pipeline{
 				sh "node server.js"
 			}
 		}
-
+		stage("Test"){
+			steps{
+				
+				sh "pip3 install -r requirements txt"
+				sh "python3 main.py"
+			}
+		}
 	}
 }
 		
