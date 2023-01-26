@@ -10,7 +10,7 @@ pipeline{
 		}
 		stage("Testings"){
 			steps{
-				sh "python -u %WORKSPACE% main.py"
+				sh "py -V"
 			}
 		}
 		
