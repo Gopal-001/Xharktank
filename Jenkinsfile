@@ -14,6 +14,7 @@ pipeline{
 				sh "python -V"
 				sh "pip -V"
 				sh "pip install -r requirement.txt"
+				sh "python main.py"
 			}
 		}
 		
