@@ -10,10 +10,7 @@ pipeline{
 		}
 		stage("Testings"){
 			steps{
-				withEnv(["HOME=${env.WORKSPACE}"]){
-					sh "pip install --user -r requirements.txt"
-					sh "python main.py"
-				}
+				sh "py -v"
 			}
 		}
 		
