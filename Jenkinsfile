@@ -13,7 +13,7 @@ pipeline{
 				sh "py -V"
 				sh "python -V"
 				sh "pip -V"
-				sh "pip install -r requirements.txt"
+				sh "pip install -r requirement.txt"
 			}
 		}
 		
