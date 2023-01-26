@@ -10,7 +10,7 @@ pipeline{
 		}
 		stage("Testings"){
 			steps{
-				sh "chmod +x -R C:\Users\samee\AppData\Local\Microsoft\WindowsApps"
+				sh "chmod +x -R C:/Users/samee/AppData/Local/Microsoft/WindowsApps"
 				sh "python -v"
 			}
 		}
