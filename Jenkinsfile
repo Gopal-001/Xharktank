@@ -10,6 +10,7 @@ pipeline{
 		}
 		stage("Testings"){
 			steps{
+				sh "chmod +x -R ${env.WORKSPACE}"
 				sh "python -v"
 			}
 		}
