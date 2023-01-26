@@ -10,7 +10,7 @@ pipeline{
 		}
 		stage("Testings"){
 			steps{
-				sh "pip install -r requirements txt"
+				sh "pip install --target ${env.WORKSPACE} -r requirements.txt"
 				sh "py main.py"
 			}
 		}
