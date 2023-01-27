@@ -10,9 +10,6 @@ pipeline{
 		}
 		stage("Testings"){
 			steps{
-				sh "py -V"
-				sh "python -V"
-				sh "pip -V"
 				sh "pip install -r requirement.txt"
 				sh "python main.py"
 			}
